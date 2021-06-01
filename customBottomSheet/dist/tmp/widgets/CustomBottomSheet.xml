@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="finaps.custombottomsheet.CustomBottomSheet" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Advanced Bottom Sheet</name>
+    <description>Widget which provides a configurable bottom sheet</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABCgAwAEAAAAAQAAABYAAAAACfarjAAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAY9JREFUOBHFVMFKw0AQ3SYhppFYDyYi9rD3evQDPPgRHoPQU8EvENqz2EMLgsfe/It2D/6AYK+yghdbpGAgsW3SOiPJdtMmbdGDDybz5r3ZYZaEFMgq6KqUUrhcFaTiDLgLgXkTGDQ0IDiEAAPmiiqfULAaEB0IIm8wj2uKxhZg0EO1uJFCfo25CxkjDwyMxrJJQeDL4pqagsfRTzZAnoAmZJucNcCFgxh56ICBkQKFiqeU9QUFm2OLgo+/IOsKNB5Yzhj8tqyJAZqmFcMwnFuW5UVRpPi+vys3q6oamabpowZ+BP4YuRig6/rBXbtNHNu2BsMhua7X0Rc4qVTUq1rNQuG53yc3zebU8zwxoKwoCrH2D0kwJT+51boXhxOCXgG+XcdxCGyroi420Iw98vBkJ7252dBm5Pz4XfhiQPj1SS5PF4boyCCD4UIUA1AKppvfKl5BhhjwH1eY4SbJBo87uj7uMlaE1yVvmMm7vR4xDYMHQZD6oVyUSqXbyWRylHlKEuHwy8doVAWJSfLv6DfEiWxwSfzzUAAAAABJRU5ErkJggg==</icon>
+    <properties>
+     <propertyGroup caption="General">
+        <property key="content" type="widgets" required="true">
+            <caption>Content</caption>
+            <description>Area for the content to be placed</description>
+            </property>
+        <property key="showBottomSheet" type="attribute" required="true">
+                <caption>Trigger bottom sheet</caption>
+                <description>Boolean attribute which triggers the bottom sheet on a changed value</description>
+                <attributeTypes>
+                    <attributeType name="Boolean"/>
+                </attributeTypes>
+            </property>
+        <property key="height" type="integer" defaultValue="0">
+            <caption>Height</caption>
+            <description>The height of the bottom sheet in pixels. If this value is 0, the height will be calculated automatically </description>
+            </property>
+        <property key="closeDuration" type="integer" defaultValue="300">
+            <caption>Close Duration</caption>
+            <description>The duration of the close animation in ms</description>
+            </property>
+        <property key="openDuration" type="integer" defaultValue="200">
+            <caption>Open Duration</caption>
+            <description>The duration of the open animation in ms</description>
+            </property>
+        <property key="closeOnDragDown" type="boolean" defaultValue="false">
+                <caption>Close on Dragdown</caption>
+                <description>If true, the Bottom Sheet can be closed by dragging down. Note this should not be combined with a scrollview inside the bottomsheet</description>
+            </property>
+        <property key="animation" type="enumeration" defaultValue="none">
+                <caption>Animation Type</caption>
+                <description/>
+                <enumerationValues>
+                    <enumerationValue key="none">None</enumerationValue>
+                    <enumerationValue key="fade">Fade</enumerationValue>
+                    <enumerationValue key="slide">Slide</enumerationValue>
+                </enumerationValues>
+            </property>    
+      </propertyGroup>
+    </properties>
+</widget>
