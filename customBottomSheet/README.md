@@ -1,17 +1,18 @@
 ## CustomBottomSheet
-[My widget description]
+The Advanced Bottom sheet extends on the bottom sheet. It gives the developer finer control on how the widget is set up and behaves. This includes whether the sheet should be fixed in size or automatically size to the content provided, the animations as it opens and also the styling for the overlays. 
 
 ## Features
-[feature highlights]
+- Automatic sizing to fit content.
+- Fixed sizing is also possible. 
+- Drag down to dismiss.
+- It is possible to style the container and the overlay.
+- Animation times and styles can be adjusted easily.
 
 ## Usage
-[step by step instructions]
+Bottomsheets are traditionally used to provide a dropdown list for mobile devices. This widget can be used whenever content can have a variable number of items
 
 ## Demo project
-[link to sandbox]
 
 ## Issues, suggestions and feature requests
-[link to GitHub issues]
 
 ## Development and contribution
-[specify contribute]
