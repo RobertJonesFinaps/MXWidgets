@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="finaps.scrolltocontent.ScrollToContent" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Automatic ScrollView</name>
+    <description>My widget description</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABagAwAEAAAAAQAAABYAAAAArsIchAAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAYxJREFUOBHtVDtOw0AQnVk7EnTQUCJ3nIHORQouQE9JB0IUFByCI/gYdCQiEg2HsMgBQAiJCHu9vFnvxut87BCJBrHSeGZn5r111pNH9EuLt+U9uXxKPLaMSxtzpaw3VCWLxFLIYCmMhtePKVX8YIgKNCrJYUW1I+08oV5JzOxyhnZiX3Q+CfdxGeel0gTSQZh3sT9A6nVsmj7/FitwRPd3xzlQs5XFnmQnscUa+ujhWFlevIqlJmPohhUdNQWeSqy0tl5ipsFLnSts7jPShezDlWIzChPbxr1vvI64b9w6ibvGrSTdjFvFdtyITZ0zvDRurRf8H7fWdfydcfM/y4+dKJxXN6l1jpuAIEJj/LUOcCVWaJzK2VgI/NgZGbn5uLXV7Qx9Ijh7sASWW52t+FB0EYTrlj8wQt9cBcN+wOkVtg8bw1IYDa8mkv/x8uqWAClkQiors8/68RbEG4eeOAfi1qG+4DMXyx1Y5ZrvNwzCjzcB5hT23MKyuSDD580BPF2UTKVrufS49101+wbODo/Iibk8gwAAAABJRU5ErkJggg==</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="activeItemTrigger" type="attribute" required="true">
+                <caption>Scroll trigger</caption>
+                <description>This attribute is set to match a Section Label to trigger the scroll to the corresponding section. Note that once the scroll has been activated, this attribute will be reset.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="activeItem" type="attribute" required="false">
+                <caption>Currently Shown Section</caption>
+                <description>The Value of this attribute automatically changes to match the currently visible section. This is useful to e.g. inform the user of his current position on the page.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="allowScroll" type="boolean" defaultValue="true">
+                <caption>Allow manual scrolling?</caption>
+                <description>Setting this to true allows the user to scroll.</description>
+            </property>
+            <property key="showScrollBar" type="boolean" defaultValue="true">
+                <caption>Show Scroll bar?</caption>
+                <description></description>
+            </property>
+            <property key="listContent" type="object" isList="true">
+                    <caption>Content</caption>
+                    <description>Each item will result in a new section being added.</description>
+                    <properties>
+                        <propertyGroup caption="List">
+                            <property key="sectionLabel" type="expression" defaultValue="" required="true">
+                                <caption>Section Label</caption>
+                                <description>This value will be matched by the Scroll Trigger attribute above.</description>
+                                <returnType type="String" />
+                            </property>
+                            <property key="padItem" type="boolean" defaultValue="false">
+                                <caption>Pad Section</caption>
+                                <description>Include padding to fill the page to ensure the next section is offscreen. Especially helpful on the last section to give it adequate space.</description>
+                            </property>
+                            <property key="content" type="widgets">
+                                <caption>Section Content</caption>
+                                <description/>
+                            </property>
+                        </propertyGroup>
+                    </properties>
+                </property>
+        </propertyGroup>
+    </properties>
+</widget>
