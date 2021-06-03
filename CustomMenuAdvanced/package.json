@@ -1,0 +1,34 @@
+{
+  "name": "custommenuadvanced",
+  "widgetName": "CustomMenuAdvanced",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "Finaps 2019",
+  "author": "Stefani Peters",
+  "config": {
+    "widgetPath": "../..//widgets",
+    "projectPath": "../..//"
+  },
+  "packagePath": "finaps",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "npm run mx-script build:js:native",
+    "dev": "npm run mx-script start:js:native",
+    "lint": "npm run mx-script lint",
+    "lint:fix": "npm run mx-script lint:fix",
+    "mx-script": "cd ./node_modules/@mendix/pluggable-widgets-tools && node bin/mx-scripts.js",
+    "prerelease": "npm run lint",
+    "release": "npm run mx-script release:js:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Stefani Peters/custommenuadvanced/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.2.0"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "react-navigation": "^4.1.1"
+  }
+}

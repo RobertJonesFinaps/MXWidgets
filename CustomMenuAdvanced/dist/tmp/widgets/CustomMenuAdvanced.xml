@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="finaps.custommenuadvanced.CustomMenuAdvanced" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/@mendix/pluggable-widgets-api/widget.xsd">
+    <name>Navigation Reactive Layout</name>
+    <description>This widget provides dropdown areas which are dependent on the current page displayed. Given a page "ModuleName.PageName" is shown the active item area for that page will be shown, the other area</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABKgAwAEAAAAAQAAABsAAAAAJVr/+gAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAY5JREFUOBFjZIACg5B+B2Fe7oKvP35ZMcIECdDs7CzPPn/5uensmvw6sB6QIf//MexvynH7b6ItQ6w5DM9ef2LoX3T48/3H76aA7XROnLVh476r//6TAZ6+/PjfNm7aBxaQSSDvwFyyZcsWhocPHxLwFAMDKysrQ2xsLIOUGB8DCzMTK9ggZL+ADHn9+jVBg0AKvnz5wsDJyQlWy0SUDiIUYRgEcjKxgIUF7CGwcgQLqhvkb5CTCQGQIYKCgnBlGAb929PPwPbgHFwBLgYjGwfD/7ipDIyc/GAlGAb9ARry9/U9XPpRxP99ecvADDUII4xQVJLAwTAI5GRiASMLO1wphtd4gf4GOZkQABnCJCgNV4Zh0Na9h0lK2bAEiWHQaMpmIJiyQYEHC0B4lBDBwEhHROjBqmSQGgSqDUAFObng3z+Gv2Cvffn2axKoNnj2inTDaibt/Pv779+b8OLaMnJKGwsrUxaoICfWZe8+fufi5mI7c2xJtincIJBmg4B+BWINAam7sKHwASnqiVILALnzuVKCQXZvAAAAAElFTkSuQmCC</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="menuItem" type="object" isList="true">
+                    <caption>Items</caption>
+                    <description>Each item will add a drop zone.</description>
+                    <properties>
+                        <propertyGroup caption="Navigation">
+                            <property key="title" type="string">
+                                <caption>Title of Page</caption>
+                                <description>Must match the format for the page name: ModuleName.PageName</description>
+                            </property>               
+                            <property key="contentActive" type="widgets">
+                                <caption>Active Page</caption>
+                                <description/>
+                            </property>
+                            <property key="contentInactive" type="widgets">
+                                <caption>Inactive Page</caption>
+                                <description/>
+                            </property>
+                        </propertyGroup>
+                    </properties>
+                </property>
+        </propertyGroup>
+    </properties>
+</widget>
