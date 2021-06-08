@@ -1,0 +1,39 @@
+{
+    "name": "parallaxscrollview",
+    "widgetName": "ParallaxScrollView",
+    "version": "1.0.0",
+    "description": "My widget description",
+    "copyright": "Finaps 2019",
+    "author": "Stefani Peters",
+    "config": {
+        "widgetPath": "../..//widgets",
+        "projectPath": "../..//"
+    },
+    "packagePath": "finaps",
+    "scripts": {
+        "start": "pluggable-widgets-tools start:native",
+        "build": "pluggable-widgets-tools build:native",
+        "release": "pluggable-widgets-tools release:native",
+        "lint": "..\"/../../node_modules/.bin/eslint\" --config ../../../.eslintrc.js --ext .jsx,.js,.ts,.tsx src/",
+        "test": "..\"/../../node_modules/.bin/jest\" --config ../../../scripts/test/jest.native.config.js",
+        "version": "npm run release",
+        "postversion": "..\"/../../node_modules/.bin/ts-node\" ../../../scripts/release/UpdateGithubRelease.ts --project ../../../scripts/tsconfig.json"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/Stefani Peters/parallaxscrollview/issues"
+    },
+    "devDependencies": {
+        "@mendix/pluggable-widgets-tools": "8.15.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-native": "^0.61.5"
+    },
+    "dependencies": {
+        "big.js": "^5.2.2",
+        "react-native-device-info": "5.5.3",
+        "react-native-parallax-scroll-view": "github:fungilation/react-native-parallax-scroll-view",
+        "react-native-safe-area-context": "^0.6.4",
+        "react-native-safe-area-view": "^1.1.1"
+    }
+}

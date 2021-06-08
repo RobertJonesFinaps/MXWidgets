@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="finaps.parallaxscrollview.ParallaxScrollView" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/@mendix/pluggable-widgets-api/widget.xsd">
+    <name>Parallax Scroll View</name>
+    <description>My widget description</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABYAAAAjCAYAAACQA/olAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABagAwAEAAAAAQAAACMAAAAAxwMrcgAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAXdJREFUSA1jYKATUADaswCI/5OBHwD1LABiBSBmYAQRSOC/umM+g6xhKJIQ8czfPz4zfHx2+du3Nw/cmZG0LQAaaiBrEAy0Dt0+JFV4mMws7AwcfBKsDMzMzkxI6hwkND2AhiILIckSyWRiZmXgFlaURTZFnpWDl0jt+JWxsvMwseBTsqfPBp80XM6l6AicDWPgNRibBphGQjReg0Ga8bkan8UEDcanGZ+rkSMPnzqS5VAMBiVwagEUgx+cWszAxERe5oA56P//vwyPz69mQDH41a39DMle8gw8nASDHmYOCg3S9+TCOoab+yeilBWggofh/38whaKBFA4jtDhAcTEpBhBSSzODsQama/FRQg7CKr+71xouTjMXI6etoRF5o2EMrC4h0UazVDEaxrQPY5pFHrLBD0ElyIMHD+AFCbUYC4AG/be3t/9///59YHlPGgDpAekFmQHEILPgQAHIgklQSoPMQgEKQN4CIH4AxKQaDtKzAIhpCwAsQbcFFLwk1wAAAABJRU5ErkJggg==</icon>
+    <properties>
+        <property key="fixedHeader" type="widgets" required="false">
+            <caption>Fixed Header</caption>
+            <category>General</category>
+            <description></description>
+        </property>
+        <property key="headerLarge" type="widgets" required="false">
+            <caption>Parallax Content</caption>
+            <category>General</category>
+            <description>Sample text input</description>
+        </property>
+        <property key="stickyHeader" type="widgets" required="false">
+            <caption>Sticky Header</caption>
+            <category>General</category>
+            <description>Sample text input</description>
+        </property>
+        <property key="backgroundImage" type="widgets" required="false">
+            <caption>Background Image</caption>
+            <category>General</category>
+            <description>Sample text input</description>
+        </property>
+        <property key="content" type="widgets" required="true">
+            <caption>Content</caption>
+            <category>General</category>
+            <description>Sample text input</description>
+        </property>
+        <property key="parallaxHeight" type="decimal" required="true" defaultValue="100.0">
+            <caption>Height of Parallax header</caption>
+            <category>General</category>
+            <description>Initial percentage of screen devoted to the parallax header.</description>
+        </property>
+        <property key="initalHeightUnit" type="enumeration" defaultValue="percentage">
+            <caption>Inital height unit</caption>
+            <category>General</category>
+            <description></description>
+            <enumerationValues>
+                <enumerationValue key="percentage">Percentage</enumerationValue>
+                <enumerationValue key="pixels">Pixels</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="scrollSpeed" type="decimal" required="true" defaultValue="2.0">
+            <caption>Scroll Speed</caption>
+            <category>General</category>
+            <description>Speed content moves relative to background.</description>
+        </property>
+        <property key="stickyHeight" type="decimal" required="true" defaultValue="20.0">
+            <caption>Height of Sticky header</caption>
+            <category>Sticky Header</category>
+            <description>Percentage of screen devoted to the sticky header.</description>
+        </property>
+        <property key="stickyHeightUnit" type="enumeration" defaultValue="percentage">
+            <caption>Sticky header unit</caption>
+            <category>Sticky Header</category>
+            <description></description>
+            <enumerationValues>
+                <enumerationValue key="percentage">Percentage</enumerationValue>
+                <enumerationValue key="pixels">Pixels</enumerationValue>
+            </enumerationValues>
+        </property>
+    </properties>
+</widget>
