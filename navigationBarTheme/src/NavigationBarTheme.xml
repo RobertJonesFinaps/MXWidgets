@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="finaps.navigationbartheme.NavigationBarTheme" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Navigation Bar Theme</name>
+    <description>My widget description</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABkAAAAMCAYAAACX8hZLAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABmgAwAEAAAAAQAAAAwAAAAAQhCgcgAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAZZJREFUOBFjZIACg6D+hH8MDAmMDAwKMDEQfW17g/Tv7x9ZWDn5/yCLw9hang1PYWwQ/Z+B4QETE0PDhTWFB2DiQDMZGIAWNAAl619c38Hw/uEpmByY/vXtPQofncPGJYguxMAjqsIgrGg98faBCQVwSf2g/gdC8qb/t+0+8v/bj9//X7//9j+/Y8t/y4SlQLtBjsONQWpA+PmbL/+3Hrn73zx2wX9xTff/AjKGn2EWMEEZ8u8enmbwdLFm4GRnYRAR4GR49FmQgVtInkFQxgCmFoPm4JMAqwGpkxDmZmBh42HgBfpCSN6M4du7BzwwDSwwBjr9+O5Fhn///jPwSekyvH9yAV0azBfXcGV49+QimO2bc4/h2WuI49m4hBiQgxnFEoPgCRiGcQkpMMgaRzI8PrscLsfKKcDAK6bKICBjxPD3zy+w+OPnb+Hy6AywJYz/GBSBEvehNIoadg4hBnZZM4Yfn1/LwCSktbyfgNnA5IgVsIBT6H5scqAIpiaAmweLeGoajmHW8LEEJXUB/fkAw69UEAAAGW2AC1NQCcwAAAAASUVORK5CYII=</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="statusBarStyle" type="enumeration" defaultValue="default">
+                <caption>Status Bar style</caption>
+                <description>Default indicates light for android and dark for ios</description>
+                <enumerationValues>
+                    <enumerationValue key="default">Default</enumerationValue>
+                    <enumerationValue key="light">Light</enumerationValue>
+                    <enumerationValue key="dark">Dark</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="hideStatusBar" type="boolean" defaultValue="false">
+                <caption>Hide Status bar?</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
