@@ -1,0 +1,32 @@
+{
+  "name": "customsafeareaview",
+  "widgetName": "CustomSafeAreaView",
+  "version": "1.0.1",
+  "description": "My widget description",
+  "copyright": "Finaps 2020",
+  "author": "Stefani Peters",
+  "config": {
+    "widgetPath": "../..//widgets",
+    "projectPath": "../..//"
+  },
+  "packagePath": "finaps",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:js:native",
+    "dev": "pluggable-widgets-tools start:js:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:js:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Stefani Peters/customsafeareaview/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "8.2.0"
+  },
+  "dependencies": {
+    "react-navigation": "4.4.4"
+  }
+}

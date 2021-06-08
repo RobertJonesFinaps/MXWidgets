@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="finaps.customsafeareaview.CustomSafeAreaView" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Customisable Safe Area View</name>
+    <description>Safe area view that allows styling of the Unsafe areas</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAfCAYAAADupU20AAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABCgAwAEAAAAAQAAAB8AAAAABObJ/QAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAXBJREFUOBFjZEAAB25ubrf////r//z5Uw0hDGExMzN/ZmNjuwXiffny5QaQWgDEDxiBBAMPD88KdXV1Dx8fH/4fP34wdHZ2goRRAFCeoaKiAix29+7dXxMnTvwMBCYsIBGgieFnzpwBS757945BTk4OzEYmlJWVGdzd3WFCbEpKSgIFBQVgmxyMjIzeA51OEti/f/9/ISGh80wwI8mhmZiYGCkyAGQpxQawyOj6SXOr2XBOXnePJF98/wCxm4VbWEGEXcqKfdPR5yQZIC8MMYBiL4waQIV0MBqIo4EIyr4s75+efyLMx/y9vKyUk5T8/OLxbYaNUA1kF6oiIiIXBklKBFUIpPgfpvbfv3//QTXTAyBgAmIGBQUFsNyCBQsYDhw4AGYjEw0NDXA1c+fO/Q0EO8B1IwcHRwuwYs1zdXUF1hVMzMC6jxlZI4wNrN7+gti3b9/+ff/+/Xtv3rwxABsAVaAApB2gbELUA6CCAyBFABo+1zVcFQGZAAAAAElFTkSuQmCC</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="content" type="widgets" required="true">
+                <caption>Content</caption>
+                <description>All the content that needs to be inside the safe area.</description>
+            </property>
+            <property key="topNotchColor" type="expression" required="false" defaultValue="'white'">
+                <caption>Top notch colour</caption>
+                <description>Background colour (name or hex code) of the top notch, i.e. the Status Bar.</description>
+                <returnType type="String" />
+            </property>
+            <property key="bottomNotchColor" type="expression" required="false" defaultValue="'white'">
+                <caption>Bottom notch colour</caption>
+                <description>Background colour (name or hex code) of the bottom notch. Only applicable for iOS.</description>
+                <returnType type="String" />
+            </property>
+            <property key="hideStatusBar" type="boolean" defaultValue="false">
+                <caption>Hide Status Bar?</caption>
+                <description>Note that when Status Bar is hidden, the Status Bar Text style below has no effect.</description>
+            </property>
+            <property key="statusBarStyle" type="enumeration" defaultValue="default">
+                <caption>Status Bar Text style</caption>
+                <description>Default indicates light for Android and dark for iOS.</description>
+                <enumerationValues>
+                    <enumerationValue key="default">Default</enumerationValue>
+                    <enumerationValue key="light">Light</enumerationValue>
+                    <enumerationValue key="dark">Dark</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
