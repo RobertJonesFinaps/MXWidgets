@@ -1,0 +1,35 @@
+{
+  "name": "horizontalscroll",
+  "widgetName": "HorizontalScroll",
+  "version": "1.0.0",
+  "description": "ScrollView that scrolls horizontally",
+  "copyright": "Finaps",
+  "author": "Yara van Schaik",
+  "engines": {
+    "node": ">=12"
+  },
+  "config": {
+    "projectPath": "../..//"
+  },
+  "packagePath": "finaps",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "test": "pluggable-widgets-tools test:unit:native --no-cache --ci",
+    "test:unit": "pluggable-widgets-tools test:unit:native --coverage",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "jest-junit": {
+    "output": "./dist/testresults/TESTS-Jest.xml"
+  },
+  "license": "Apache -2.0",
+  "bugs": {
+    "url": "https://github.com/Yara van Schaik/horizontalscroll/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  }
+}

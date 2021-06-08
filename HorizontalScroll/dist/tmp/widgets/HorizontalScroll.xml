@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="finaps.horizontalscroll.HorizontalScroll" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Horizontal Scroll</name>
+    <description>ScrollView for scrolling horizontally</description>
+    <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACWAAAAAQAAAJYAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAABSgAwAEAAAAAQAAABkAAAAA+K4bkgAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAAOdJREFUOBFjYBgFlIYAI5oBIkC+GJLYKyD7DZSPTw5JCyoTpPk/EoYZBlKFTw4kDwboLgQZhg5gavDJwfUwwVlUYowaSHlAjobhIAxDFjQ3rQHytZDEriGx8ckhKaMl06XksAMp5rsWHU1AVw9Ph76Vx9oZ/jHuR1eAj/+f4f98sD4kReCiyaXoyH8RfrY/bz7+YmH5x6yIJI+X+Yfp731NBb4f1x984gDp2zHB8gE4UpiYGA7/+v3PFKibBajoAF5T0CRBhrGxMrds67R8gCIFCj+QS1EECXBA6vGGu0fBcQUCZhCUBgADt0eMfSrPegAAAABJRU5ErkJggg==
+    </icon>
+    <properties>
+        <propertyGroup caption="General">
+        <property key="content" type="widgets" required="true">
+                <caption>Content</caption>
+                <description>All the content that needs to be inside the safe area.</description>
+            </property>
+            <property key="showScrollBar" type="boolean" defaultValue="true">
+                <caption>Show Scroll bar?</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
